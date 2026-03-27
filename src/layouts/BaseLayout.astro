@@ -1,0 +1,103 @@
+---
+import PostHog from '../components/PostHog.astro';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+}
+
+const { title, description = 'Reflection Network Blog', image } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="alternate" type="application/rss+xml" title="Reflection Network Blog" href="/rss.xml" />
+  <link rel="canonical" href={canonicalURL} />
+
+  <title>{title}</title>
+  <meta name="description" content={description} />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content={canonicalURL} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  {image && <meta property="og:image" content={new URL(image, Astro.site)} />}
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  {image && <meta name="twitter:image" content={new URL(image, Astro.site)} />}
+
+  <PostHog />
+</head>
+<body>
+  <header class="site-header">
+    <nav>
+      <a href="/" class="site-title">Reflection</a>
+    </nav>
+  </header>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer class="site-footer">
+    <a href="https://reflection.network">reflection.network</a>
+    <span class="separator">&middot;</span>
+    <a href="/rss.xml">RSS</a>
+  </footer>
+</body>
+</html>
+
+<style>
+  .site-header {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+  }
+
+  .site-title {
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .site-title:hover {
+    text-decoration: none;
+    color: var(--accent);
+  }
+
+  main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1rem 3rem;
+  }
+
+  .site-footer {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 0.85rem;
+  }
+
+  .site-footer a {
+    color: var(--text-muted);
+  }
+
+  .site-footer a:hover {
+    color: var(--accent);
+  }
+
+  .separator {
+    margin: 0 0.5em;
+  }
+</style>

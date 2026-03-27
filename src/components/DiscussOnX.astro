@@ -1,0 +1,25 @@
+---
+interface Props {
+  url: string;
+}
+
+const { url } = Astro.props;
+---
+<div class="discuss-on-x">
+  <a href={url} target="_blank" rel="noopener noreferrer">Discuss on X &rarr;</a>
+</div>
+
+<style>
+  .discuss-on-x {
+    margin-top: 2em;
+    padding-top: 1.5em;
+    border-top: 1px solid var(--border);
+  }
+  .discuss-on-x a {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+  }
+  .discuss-on-x a:hover {
+    color: var(--accent);
+  }
+</style>

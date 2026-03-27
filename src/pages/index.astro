@@ -1,0 +1,82 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+
+const posts = (await getCollection('blog'))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+function postUrl(post: typeof posts[number]): string {
+  return `/${post.id}/`;
+}
+---
+<BaseLayout title="Reflection Network Blog">
+  <div class="blog-index">
+    <h1>Blog</h1>
+    <ul class="post-list">
+      {posts.map((post) => (
+        <li>
+          <a href={postUrl(post)}>
+            <span class="post-date"><FormattedDate date={post.data.date} /></span>
+            <span class="post-title">{post.data.title}</span>
+          </a>
+          {post.data.description && (
+            <p class="post-description">{post.data.description}</p>
+          )}
+        </li>
+      ))}
+    </ul>
+  </div>
+</BaseLayout>
+
+<style>
+  .blog-index h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .post-list li {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .post-list li:last-child {
+    border-bottom: none;
+  }
+
+  .post-list a {
+    text-decoration: none;
+    display: block;
+  }
+
+  .post-list a:hover .post-title {
+    color: var(--accent);
+  }
+
+  .post-date {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 0.25rem;
+  }
+
+  .post-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    transition: color 0.15s;
+  }
+
+  .post-description {
+    margin-top: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+</style>
