@@ -39,7 +39,13 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 <body>
   <header class="site-header">
     <nav>
-      <a href="/" class="site-title">Reflection</a>
+      <a href="/" class="site-title">Reflection Network Blog</a>
+      <div class="nav-links">
+        <a href="https://reflection.network">Home</a>
+        <a href="https://docs.reflection.network">Docs</a>
+        <a href="https://github.com/reflection-network">GitHub</a>
+        <a href="https://x.com/reflection_dev">X</a>
+      </div>
     </nav>
   </header>
 
@@ -49,6 +55,12 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
   <footer class="site-footer">
     <a href="https://reflection.network">reflection.network</a>
+    <span class="separator">&middot;</span>
+    <a href="https://docs.reflection.network">Docs</a>
+    <span class="separator">&middot;</span>
+    <a href="https://github.com/reflection-network">GitHub</a>
+    <span class="separator">&middot;</span>
+    <a href="https://x.com/reflection_dev">X</a>
     <span class="separator">&middot;</span>
     <a href="/rss.xml">RSS</a>
   </footer>
@@ -62,6 +74,13 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     padding: 1.5rem 1rem;
   }
 
+  .site-header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
   .site-title {
     color: var(--text-primary);
     font-size: 1.1rem;
@@ -71,6 +90,21 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
   .site-title:hover {
     text-decoration: none;
+    color: var(--accent);
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.85rem;
+  }
+
+  .nav-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+  }
+
+  .nav-links a:hover {
     color: var(--accent);
   }
 
