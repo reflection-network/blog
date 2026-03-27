@@ -2,7 +2,7 @@
 title: "003: Config to Container"
 description: "nix build turns a capsule into a Docker image. Non-root user, writable home, zero Dockerfiles."
 date: 2026-03-23T10:34:32
-featured_image: ./featured.png
+featured_image: ./featured.jpg
 ---
 
 The [agent can identify itself](/001-agent-is-a-repo/). It has a name, a system prompt, and a dev shell where you can ask it who it is. But it has no body. It exists only inside `nix develop` — the moment you leave the shell, it's gone.
