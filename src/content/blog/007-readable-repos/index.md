@@ -2,7 +2,7 @@
 title: "007: Readable Repos"
 description: "Seven repos, seven READMEs. Consistent format, no boilerplate. The project goes from 'read the Nix' to 'read the README' in one iteration."
 date: 2026-03-25T10:53:03
-featured_image: ./featured.png
+featured_image: ./featured.jpg
 ---
 
 Six iterations of code. An [agent schema](/001-agent-is-a-repo/), [Docker builds](/003-config-to-container/), [Telegram transport](/004-agent-speaks/), [session persistence](/005-agent-remembers/), a [dev launcher](/006-demo-deploy/). All working, all deployed. And if you `git clone` any of these repos, you see... a `flake.nix` and nothing else.

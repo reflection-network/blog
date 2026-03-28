@@ -2,7 +2,7 @@
 title: "006: Demo Deploy"
 description: "A dev launcher watches the capsule's git repo, builds in an isolated git worktree, and restarts the container automatically. Push a change, the agent updates itself — safely."
 date: 2026-03-24T12:00:00
-featured_image: ./featured.png
+featured_image: ./featured.jpg
 ---
 
 The agent has memory. It talks on Telegram and remembers what you said. But the development loop is painful: change the config, `nix build`, `docker load`, `docker stop`, `docker rm`, `docker run`. Six commands every time you tweak a system prompt.

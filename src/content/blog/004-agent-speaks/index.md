@@ -2,7 +2,7 @@
 title: "004: Agent Speaks"
 description: "The agent gets a Telegram transport. Same config, different adapter import. One line changes, silent container becomes a chatbot."
 date: 2026-03-23T12:14:48
-featured_image: ./featured.png
+featured_image: ./featured.jpg
 ---
 
 The agent has a body — a [Docker container built from pure Nix](/003-config-to-container/). It can tell you its name and system prompt. But it can't talk to anyone. No input, no output. A brain in a jar.

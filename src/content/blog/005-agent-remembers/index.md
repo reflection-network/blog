@@ -2,7 +2,7 @@
 title: "005: Agent Remembers"
 description: "The agent gets session persistence. Each Telegram chat maps to a UUID, two-phase invocation handles failures gracefully, and ~40 lines of bash give the agent conversational continuity."
 date: 2026-03-24T04:45:34
-featured_image: ./featured.png
+featured_image: ./featured.jpg
 ---
 
 The agent [can talk](/004-agent-speaks/). Telegram messages go in, Claude responses come back. But every message is a blank slate. "Remember 42" followed by "What number?" gets nothing useful. The agent has amnesia.

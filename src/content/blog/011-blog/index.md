@@ -80,7 +80,7 @@ Reflection now has five distinct public surfaces, each serving a different purpo
 | Documentation | docs.reflection.network | Technical how-to |
 | Blog | blog.reflection.network | Engineering decisions |
 | Source code | github.com/reflection-network | Implementation |
-| X | x.com/reflectionNtwrk | Announcements |
+| X | x.com/reflection_dev | Announcements |
 
 The landing page explains what Reflection is. The docs explain how to use it. GitHub provides the source. X announces each iteration. The blog fills a gap that none of the others cover: the reasoning behind engineering decisions, the approaches that were evaluated, and the trade-offs that shaped the design.
 
