@@ -17,7 +17,7 @@ nix build turns a capsule into a Docker image. Non-root user, writable home, zer
 
 ## Tweet
 
-nix build turns a capsule into a Docker image. Non-root user, writable home, zero Dockerfiles. Getting there took multiple failed attempts — chown silently failing in a sandbox was the worst.
+Your AI agent shouldn't need to know it runs in Docker. Ours doesn't. Same config as before — but now `nix build` turns it into a deployable container. The agent author changed nothing.
 
 https://blog.reflection.network/003-config-to-container/
 
