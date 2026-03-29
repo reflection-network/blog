@@ -2,7 +2,7 @@
 title: "009: Second Adapter"
 description: "One adapter is an implementation. Two adapters is a pattern. ZeroClaw proves the capsule abstraction holds across completely different runtimes."
 date: 2026-03-26T10:00:00
-featured_image: ./capsule-config.png
+featured_image: ./featured.jpg
 ---
 
 One adapter is an implementation. Two adapters is a pattern.

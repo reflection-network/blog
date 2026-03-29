@@ -2,7 +2,7 @@
 title: "008: Persistent Home"
 description: "Docker named volumes, a self-healing entrypoint, memory limits, and graceful shutdown. The agent's state survives redeploys."
 date: 2026-03-25T11:19:50
-featured_image: ./featured.png
+featured_image: ./featured.jpg
 ---
 
 The agent [remembers](/005-agent-remembers/) — within a container's lifetime. Iteration 005 added session persistence: each Telegram chat maps to a Claude session ID, stored as a flat file in `$HOME/sessions/`. Works perfectly until you push a config change. The [launcher](/006-demo-deploy/) detects the new commit, rebuilds the image, and recreates the container. Everything in `/home/agent` is gone. Sessions, files the agent created, any runtime state — wiped on every deploy.

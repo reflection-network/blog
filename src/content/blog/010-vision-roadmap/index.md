@@ -2,7 +2,7 @@
 title: "010: Vision & Roadmap"
 description: "Nine iterations of infrastructure crystallize into a product vision: a platform for founding and managing AI-native companies."
 date: 2026-03-27T10:00:00
-featured_image: ./vision.png
+featured_image: ./featured.jpg
 ---
 
 Nine iterations of infrastructure. A schema, two adapters, a launcher, Docker images, persistent storage, documentation. Everything works. But when someone asks "what is Reflection?" the answer keeps changing depending on which piece you're looking at.
