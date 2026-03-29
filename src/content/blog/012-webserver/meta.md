@@ -14,7 +14,6 @@ Adding nginx to every agent container — the base layer owns the web server, ad
 ## Tweet
 Every Reflection agent now has a web server. nginx in the base layer, proxy configs in the adapter. agent.nix owns the server and claims specific paths, the adapter drops a catch-all proxy into conf.d. Composable by design.
 
-#BuildInPublic 012
 https://blog.reflection.network/012-webserver/
 
 ## Image idea
