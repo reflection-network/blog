@@ -2,7 +2,6 @@
 title: "014: Teaching the AI Your Codebase"
 description: "Splitting a monolithic CLAUDE.md into per-repo files so the AI assistant has the right context wherever it works."
 date: 2026-03-30T18:00:00
-featured_image: ./featured.jpg
 ---
 
 Reflection is built by a human and an AI working together in [Claude Code](https://docs.anthropic.com/en/docs/claude-code). The AI reads a `CLAUDE.md` file at the start of every session — project conventions, architecture decisions, workflow rules. It's the persistent memory between conversations.
