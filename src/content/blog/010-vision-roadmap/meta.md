@@ -1,11 +1,3 @@
-## Title
-
-Vision & Roadmap
-
-## Description
-
-Nine iterations of infrastructure crystallize into a product vision: a platform for founding and managing AI-native companies.
-
 ## Key themes
 
 - From mechanism to metaphor: "AI agents as Git repos" is true but incomplete
@@ -19,7 +11,7 @@ Nine iterations of infrastructure crystallize into a product vision: a platform 
 
 ## Tweet
 
-Capsule = job description. Adapter = hiring process. nix build = onboarding. Git history = performance record. And you? The founder. Reflection is a platform for AI-native companies.
+New direction for Reflection: a platform for founding AI-native companies. Capsule is a job description. Adapter is the hiring process. You're the founder.
 
 https://blog.reflection.network/010-vision-roadmap/
 

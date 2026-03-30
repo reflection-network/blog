@@ -1,11 +1,3 @@
-## Title
-
-Readable Repos
-
-## Description
-
-Seven repos, seven READMEs. Consistent format, no boilerplate. The project goes from 'read the Nix' to 'read the README' in one iteration.
-
 ## Key themes
 
 - Documentation debt: working software without explanation looks abandoned
@@ -17,7 +9,7 @@ Seven repos, seven READMEs. Consistent format, no boilerplate. The project goes 
 
 ## Tweet
 
-Seven repos, zero READMEs. If you git clone any of them, you see a flake.nix and nothing else. One iteration later: seven READMEs, four docs pages, and the project explains itself.
+Every Reflection repo now explains itself. Seven READMEs, restructured docs — clone any repo and you know what it does, how to run it, and where to go next.
 
 https://blog.reflection.network/007-readable-repos/
 

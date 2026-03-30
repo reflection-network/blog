@@ -1,11 +1,3 @@
-## Title
-
-Second Adapter
-
-## Description
-
-One adapter is an implementation. Two adapters is a pattern. ZeroClaw proves the capsule abstraction holds across completely different runtimes.
-
 ## Key themes
 
 - One vs two: implementation becomes pattern with the second adapter
@@ -19,7 +11,7 @@ One adapter is an implementation. Two adapters is a pattern. ZeroClaw proves the
 
 ## Tweet
 
-One adapter is an implementation. Two adapters is a pattern. Same capsule config, two completely different runtimes — bash+Claude CLI vs ZeroClaw (Rust). The abstraction holds.
+Reflection now supports two runtimes: Claude Code CLI and ZeroClaw. Same agent config, swap one line — the capsule abstraction holds across completely different backends.
 
 https://blog.reflection.network/009-zeroclaw-adapter/
 

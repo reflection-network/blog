@@ -1,11 +1,3 @@
-## Title
-
-Persistent Home
-
-## Description
-
-Docker named volumes, a self-healing entrypoint, memory limits, and graceful shutdown. The agent's state survives redeploys.
-
 ## Key themes
 
 - Server death spiral: first deploy crashed the entire machine (no swap + unbounded memory)
@@ -18,7 +10,7 @@ Docker named volumes, a self-healing entrypoint, memory limits, and graceful shu
 
 ## Tweet
 
-The first test deploy crashed the server. Not the container — the entire machine. No swap + no memory limit = kernel lockup before OOM killer acts. Five small fixes, one theme: the agent's state survives.
+Reflection agents now keep their state across redeploys. Push a config change, the agent updates without losing conversations or files.
 
 https://blog.reflection.network/008-persistent-home/
 

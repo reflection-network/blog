@@ -1,9 +1,3 @@
-## Title
-Agent Gets a Web Server
-
-## Description
-Adding nginx to every agent container — the base layer owns the web server, adapters extend it through conf.d, and nginx specificity rules make the whole thing composable.
-
 ## Key themes
 - nginx as base infrastructure in agent.nix, not in adapters — identity belongs in the base layer
 - Composability through conf.d + nginx specificity: adapters drop catch-all proxy, agent.nix claims specific paths
@@ -12,7 +6,8 @@ Adding nginx to every agent container — the base layer owns the web server, ad
 - The flake-utils transpose bug: `base.web.${system}` not `base.${system}.web`
 
 ## Tweet
-Every Reflection agent now has a web server. nginx in the base layer, proxy configs in the adapter. agent.nix owns the server and claims specific paths, the adapter drops a catch-all proxy into conf.d. Composable by design.
+
+Every Reflection agent now has a web server. Static identity page, health endpoint, and a composable proxy layer — all from the base config.
 
 https://blog.reflection.network/012-webserver/
 

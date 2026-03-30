@@ -1,11 +1,3 @@
-## Title
-
-The Blog Is Infrastructure
-
-## Description
-
-The publishing system behind Reflection's engineering blog — Astro Content Collections, structured metadata, a visual style guide, and a process that makes publishing part of every iteration.
-
 ## Key themes
 
 - Blog as part of the delivery pipeline: every iteration produces code, docs, and a blog post
@@ -17,9 +9,8 @@ The publishing system behind Reflection's engineering blog — Astro Content Col
 
 ## Tweet
 
-Every Reflection iteration ships with a blog post alongside the code. This post documents the engineering behind the blog itself — Astro Content Collections, structured metadata, and a visual style guide.
+Every Reflection iteration now ships a blog post alongside the code. Engineering decisions, not changelogs — the reasoning behind each choice.
 
-#BuildInPublic 011
 https://blog.reflection.network/011-blog/
 
 ## Image idea
