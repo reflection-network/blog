@@ -116,15 +116,6 @@ nix-shell -p imagemagick --run "magick input.png -quality 90 featured.jpg"
 
 Delete the original PNG after conversion — only `featured.jpg` goes into the repo.
 
-### Code/terminal images
-
-For tweets or posts that reference code, generate images using tools from the `tools/` repo (`nix develop` to enter the shell):
-
-- **`code2png -s <syntax> output.png < input`** — code with monochrome syntax highlighting
-- **`ascii2png output.png < input`** — plain text / terminal output on dark background
-
-See `tools/CLAUDE.md` for full CLI options and available fonts.
-
 ## Content schema
 
 Defined in `src/content.config.ts`. Five fields:
