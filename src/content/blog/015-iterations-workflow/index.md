@@ -2,6 +2,7 @@
 title: "015: Vertical Iterations"
 description: "Why every iteration cuts through the entire stack — code, docs, blog, tooling — instead of building one layer at a time."
 date: 2026-03-30T20:00:00
+featured_image: ./featured.jpg
 ---
 
 The standard approach to building software is horizontal. Design the architecture. Build the backend. Build the frontend. Write the tests. Write the docs. Each phase is a separate task, often assigned to separate people, often months apart.
